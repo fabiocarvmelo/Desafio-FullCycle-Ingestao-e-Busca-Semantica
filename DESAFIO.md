@@ -38,8 +38,8 @@ RESPOSTA: Não tenho informações necessárias para responder sua pergunta.
 * Split: from langchain_text_splitters import RecursiveCharacterTextSplitter
 * Embeddings (OpenAI): from langchain_openai import OpenAIEmbeddings
 * Embeddings (Gemini): from langchain_google_genai import GoogleGenerativeAIEmbeddings
-* PDF: from langchain_community.document_loaders import PyPDFLoader
-Ingestãofrom langchain_postgres import PGVector
+* PDF: from langchain_community.document_loaders import PyPDFLoader 
+* Ingestão: from langchain_postgres import PGVector
 * Busca: similarity_search_with_score(query, k=10)
 
 ---

@@ -17,6 +17,11 @@ pip install -r requirements.txt
 
 ## Como executar o projeto:
 
+Configure o arquivo .env, informando o DATABASE_URL, PG_VECTOR_COLLECTION_NAME e a chave da OpenIA. 
+Obs.: A PDF_PATH é opcional, se executar a partir da pasta principal do projeto, o script captura o arquivo que está no repositório. 
+
+Execute o seguinte código:
+
 ```bash
 # 1. Subir o banco de dados:
 docker compose up -d
