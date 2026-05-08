@@ -57,8 +57,8 @@ def search_prompt():
             use_jsonb=True,
         )
         
-        # configura um "recuperador" para buscar os 3 pedaços mais relevantes
-        retriever = store.as_retriever(search_kwargs={"k": 3})
+        # configura um "recuperador" para buscar os 10 pedaços mais relevantes
+        retriever = store.as_retriever(search_kwargs={"k": 10})
 
         # inicializa o modelo da OpenAI
         llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
